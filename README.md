@@ -39,13 +39,21 @@ Razorpay is used for secure and efficient payment processing, providing users wi
 **Technologies Used:**
 
 **1)** Firebase Authentication: Secure user login and signup functionality.
+
 **2)** Fragments: Modular UI design and navigation.
+
 **3)** Retrofit: API integration for fetching real-time data.
+
 **4)** Data Binding: Simplifies UI management and ensures dynamic updates.
+
 **5)** MVVM: Promotes scalability and maintainability.
+
 **6)** Room Database: Local storage for favorites and cart management.
+
 **7)** Picasso: Smooth image loading and caching.
+
 **8)** ViewPager: For swipeable and interactive UI elements.
+
 **9)** Razorpay: Integrated payment gateway for secure transactions.
 
 <img width="223" alt="splash" src="https://github.com/user-attachments/assets/e803c13d-b6b4-4746-9490-63153db12fe8" />
