@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Addtocart_fragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecview"
+        android:layout_width="match_parent"
+        android:layout_height="684dp" />
+
+    <TextView
+        android:id="@+id/grandTotalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cartRecview"
+        android:text="Grand Total: $0.00"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_above="@id/payWithRazorButton"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/payWithRazorButton"
+        android:layout_width="398dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="0dp"
+        android:text="Pay with Razorpay"/>
+
+</RelativeLayout>

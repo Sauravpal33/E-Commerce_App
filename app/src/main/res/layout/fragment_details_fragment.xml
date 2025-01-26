@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Details_fragment">
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="706dp"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Product Image -->
+
+            <!-- Product Title -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/detailViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                android:contentDescription="Product Image" />
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Title"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Product Rating -->
+            <RatingBar
+                android:id="@+id/detailRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.0"
+                android:stepSize="0.5" />
+
+            <!-- Product Price -->
+            <TextView
+                android:id="@+id/detailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text='Price'
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!-- Discount Percentage -->
+            <TextView
+                android:id="@+id/detailsDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Discount"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <!-- Stock Availability -->
+            <TextView
+                android:id="@+id/detailStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Stock"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+
+            <!-- Warranty Information -->
+            <TextView
+                android:id="@+id/detailWarranty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Warranty"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <!-- Shipping Information -->
+            <TextView
+                android:id="@+id/detailShipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Shipping"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <!-- Return Policy -->
+            <TextView
+                android:id="@+id/detailReturnPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Return Policy"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Product Details : "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Brand"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/detailCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Category"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/detailSku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="SKU"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/detailWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Weight"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Description"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="400sp"
+        android:clickable="true"
+        android:src="@drawable/baseline_favorite_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buyNowButton"
+            android:layout_width="398dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:text="Buy Now"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+</RelativeLayout>

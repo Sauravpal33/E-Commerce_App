@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cartImg"
+            android:layout_width="183dp"
+            android:layout_height="180dp" />
+
+        <TextView
+            android:id="@+id/cartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Product Title"
+            android:layout_toRightOf="@id/cartImg"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cartPrice"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@id/cartTitle"
+            android:layout_toRightOf="@id/cartImg"
+            android:text="Price: $0.00"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/cartDecreaseQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cartPrice"
+            android:layout_toRightOf="@id/cartImg"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/cartQuantityText"
+            android:layout_toRightOf="@id/cartDecreaseQuantity"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/cartPrice"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="1"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/cartIncreaseQuantity"
+            android:layout_toRightOf="@id/cartQuantityText"
+            android:layout_below="@id/cartPrice"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/cartTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/cartDecreaseQuantity"
+            android:layout_toRightOf="@id/cartImg"
+            android:text="Total: $0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/cartDeleteImage"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/cartTotalPrice"
+            android:layout_marginLeft="180dp"
+            android:layout_toRightOf="@id/cartImg"
+            android:src="@drawable/baseline_delete_24" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

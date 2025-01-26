@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="5dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fvtImg"
+            android:layout_width="203dp"
+            android:layout_height="232dp"
+            />
+
+        <TextView
+            android:id="@+id/fvtTitle"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/fvtImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/fvtPrice"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/fvtTitle"
+            android:layout_toRightOf="@id/fvtImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Price'
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/fvtDiscount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@id/fvtPrice"
+            android:layout_toRightOf="@id/fvtImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/fvtStock"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@id/fvtDiscount"
+            android:layout_toRightOf="@id/fvtImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/deleteImage"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/fvtStock"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/fvtStock"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
